@@ -1,0 +1,54 @@
+.SearchDiv {
+  width: 100%;
+}
+
+.SearchDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #b007d4;
+  padding: 10px 20px;
+  height: 100px;
+  box-sizing: border-box;
+}
+
+.SearchInput {
+  width: 100%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding: 7px 30px;
+  border: none;
+  height: 70%;
+  font-size: 200%;
+  background-color: #cc53e5;
+  color: white;
+}
+
+.SearchInput::placeholder {
+  color: #db81ee;
+}
+
+.SearchInput:focus {
+  outline: none;
+}
+
+.IconDiv {
+  font-size: 400%;
+  padding-left: 5px;
+  color: white;
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease-in;
+  -webkit-transition: color 0.3s ease-in;
+  -moz-transition: color 0.3s ease-in;
+  -ms-transition: color 0.3s ease-in;
+  -o-transition: color 0.3s ease-in;
+}
+
+.IconDiv:hover {
+  color: #f1ff7e;
+}

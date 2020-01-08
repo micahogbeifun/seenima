@@ -1,0 +1,95 @@
+.FavCard {
+  width: 100%;
+  margin: 10px auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: 2px 1px 2px #ccc;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+.FavHeader h3 {
+  color: #b007d4;
+  text-transform: uppercase;
+}
+.FavImageCard {
+  border-color: pink;
+  width: 40%;
+  border: none;
+  display: flex;
+}
+
+.FavImageCard img {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  width: 100%;
+  max-height: 400px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.FavMovieDetail {
+  width: 100%;
+  margin-left: 20px;
+  padding: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  color: white;
+}
+
+.FavMovieDetail h5 {
+  color: #e7fd2f;
+}
+
+.FavFavDiv {
+  display: flex;
+  flex-flow: column-reverse;
+  align-items: flex-start;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #b007d4;
+  text-align: justify;
+}
+.FavFavDiv ion-icon {
+  font-size: 30px;
+  transition: all 0.3s ease-in;
+}
+
+.FavFavDiv ion-icon:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+@media (max-width: 699px) {
+  .FavCard {
+    flex-direction: column;
+    align-items: center;
+  }
+  .FavImageCard {
+    width: 100%;
+  }
+
+  .FavMovieDetail {
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+}
