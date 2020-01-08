@@ -1,0 +1,54 @@
+.NavComponent {
+  margin: 10px;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.NavComponent a {
+  color: #f7ffb5;
+  text-decoration: none;
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+}
+
+.NavComponent a:hover,
+.NavComponent a:active,
+.NavComponent a.active {
+  color: #ecff52;
+}
+
+@media (min-width: 500px) {
+  .NavComponent {
+    margin: 0;
+    padding: 16px 5px;
+    display: flex;
+    height: 100%;
+    width: auto;
+    align-items: center;
+  }
+
+  .NavComponent a {
+    color: white;
+    height: 100%;
+    box-sizing: border-box;
+    margin-right: 0;
+    border-bottom: 2.5px solid transparent;
+    transition: border-bottom 0.3s ease-in, border-color 0.3s ease-in;
+    -webkit-transition: border-bottom 0.3s ease-in, border-color 0.3s ease-in;
+    -moz-transition: border-bottom 0.3s ease-in, border-color 0.3s ease-in;
+    -ms-transition: border-bottom 0.3s ease-in, border-color 0.3s ease-in;
+    -o-transition: border-bottom 0.3s ease-in, border-color 0.3s ease-in;
+    box-sizing: border-box;
+  }
+
+  .NavComponent a:hover,
+  .NavComponent a:active,
+  .NavComponent a.active {
+    background-color: #ca06f3;
+    border-bottom: 2.5px solid #f1ff7e;
+    color: white;
+  }
+}

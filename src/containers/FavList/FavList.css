@@ -1,0 +1,19 @@
+.FavList {
+  padding: 56px 40px;
+  width: 100%;
+}
+.FavList h1 {
+  margin-top: 20px;
+  font-size: 60px;
+}
+
+@media (min-width: 500px) {
+  .FavList h1 {
+    margin-top: 20px;
+    font-size: 35px;
+  }
+  .FavList {
+    padding: 56px 20px;
+    width: 100%;
+  }
+}

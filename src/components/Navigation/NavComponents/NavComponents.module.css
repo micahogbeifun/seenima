@@ -1,0 +1,20 @@
+.NavComponents {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+@media (min-width: 620px) {
+  .NavComponents {
+    flex-flow: row;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+}

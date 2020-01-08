@@ -1,0 +1,31 @@
+.TopMenu {
+  height: 56px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ca06f3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  z-index: 90;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.7);
+}
+
+.TopMenu nav {
+  height: 100%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Logo {
+  height: 80%;
+}
+
+@media (max-width: 619px) {
+  .Desktop {
+    display: none;
+  }
+}
