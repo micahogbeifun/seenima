@@ -41,6 +41,10 @@ class HomeCarousel extends Component {
           background: "black"
         }}
       >
+<<<<<<< HEAD
+=======
+        {" "}
+>>>>>>> 6602cc5e98ffc3af0edd0223cc61149503ee23a7
         <Spinner />
       </div>
     );
