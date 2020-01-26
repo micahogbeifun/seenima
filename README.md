@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Responsive movie web app. Incorporates authentication, ability to save favourite movies and browse various categories of films.
+
 ## Available Scripts
 
 In the project directory, you can run:
