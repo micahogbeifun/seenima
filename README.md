@@ -1,6 +1,12 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Responsive movie web app. Incorporates authentication, ability to save favourite movies and browse various categories of films.
+## About
+
+This Cinema Web-App allows users to keep up with the latest movie releases in vaious categories as well as check up on old favourites. Users can also create profiles, including usernames, in order to save their favourites films. It uses the MovieDB API.
+
+## Features
+
+This app incorporates various components such as Routing, authentication, scroll-detection, forms, etc. 
 
 ## Available Scripts
 
