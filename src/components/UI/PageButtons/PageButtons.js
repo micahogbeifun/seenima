@@ -62,8 +62,8 @@ const PageButtons = ({ match, page, clicked, totalPages }) => {
   return (
     <div
       style={{
-        width: "250px",
-        margin: "20px auto",
+        width: "100%",
+        padding: "20px 0",
         display: "flex",
         alignItems: "center",
         justifyContent: `${buttonsCount > 1 ? "space-between" : "center"}`
