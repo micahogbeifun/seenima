@@ -12,17 +12,17 @@ class HomeCarousel extends Component {
     currentSlide: 0
   };
   componentDidMount() {
-    this.scroll = setInterval(
-      () =>
-        this.setState(prevState => {
-          const slide =
-            prevState.currentSlide >= this.props.images.length - 1
-              ? 0
-              : prevState.currentSlide + 1;
-          return { currentSlide: slide };
-        }),
-      7000
-    );
+    // this.scroll = setInterval(
+    //   () =>
+    //     this.setState(prevState => {
+    //       const slide =
+    //         prevState.currentSlide >= this.props.images.length - 1
+    //           ? 0
+    //           : prevState.currentSlide + 1;
+    //       return { currentSlide: slide };
+    //     }),
+    //   7000
+    // );
   }
   componentWillUnmount() {
     clearInterval(this.scroll);

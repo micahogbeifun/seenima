@@ -66,7 +66,7 @@ const PageButtons = ({ match, page, clicked, totalPages }) => {
         padding: "20px 0",
         display: "flex",
         alignItems: "center",
-        justifyContent: `${buttonsCount > 1 ? "space-between" : "center"}`
+        justifyContent: "center", // `${buttonsCount > 1 ? "space-between" : "center"}`
       }}
     >
       {buttons}
