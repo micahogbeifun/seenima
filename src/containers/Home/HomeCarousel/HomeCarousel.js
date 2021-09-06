@@ -9,12 +9,12 @@ import "./HomeCarousel.css";
 class HomeCarousel extends Component {
   state = {
     images: null,
-    currentSlide: 0
+    currentSlide: 0,
   };
   componentDidMount() {
     // this.scroll = setInterval(
     //   () =>
-    //     this.setState(prevState => {
+    //     this.setState((prevState) => {
     //       const slide =
     //         prevState.currentSlide >= this.props.images.length - 1
     //           ? 0
@@ -23,6 +23,13 @@ class HomeCarousel extends Component {
     //     }),
     //   7000
     // );
+    document.addEventListener("click", (e) => {
+      console.log(e, "clicked", e.target.className, e.target.nodeName);
+      if (e.target.nodeName === "svg")  {
+        e.preventDefault()
+        e.stopPropagation()
+      }
+    });
   }
   componentWillUnmount() {
     clearInterval(this.scroll);
@@ -38,13 +45,9 @@ class HomeCarousel extends Component {
           height: "100vh",
           display: "flex",
           alignItems: "center",
-          background: "black"
+          background: "black",
         }}
       >
-<<<<<<< HEAD
-=======
-        {" "}
->>>>>>> 6602cc5e98ffc3af0edd0223cc61149503ee23a7
         <Spinner />
       </div>
     );
@@ -55,10 +58,10 @@ class HomeCarousel extends Component {
           style={{
             width: "100%",
             height: "100vh",
-            backgroundColor: "black"
+            backgroundColor: "black",
           }}
           index={this.state.currentSlide}
-          onRequestChange={i => this.setState({ currentSlide: i })}
+          onRequestChange={(i) => this.setState({ currentSlide: i })}
         >
           {this.props.images.map((image, index) => (
             <Link key={index} to={`/movies/movie/${image.id}`}>
